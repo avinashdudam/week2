@@ -8,6 +8,7 @@ import com.pattern.factory.BirthdayCake;
 import com.pattern.factory.BirthdayCakeFactory;
 import com.pattern.factory.BirthdayCakeStore;
 
+// This file tests both singleton and factory patterns
 public class BirthdayCakeOrderTest {
 
 	@Test
@@ -21,7 +22,6 @@ public class BirthdayCakeOrderTest {
 		assertNotNull(cake);
 		assertEquals(cake.name, "Chocolate Cake");
 		assertEquals(cake.price, "10$");
-		
 	}
 	
 	@Test
@@ -35,7 +35,6 @@ public class BirthdayCakeOrderTest {
 		assertNotNull(cake);
 		assertEquals(cake.name, "PineApple Cake");
 		assertEquals(cake.price, "15$");
-		
 	}
 	
 	@Test
@@ -49,7 +48,6 @@ public class BirthdayCakeOrderTest {
 		assertNotNull(cake);
 		assertEquals(cake.name, "RedVelvet Cake");
 		assertEquals(cake.price, "20$");
-		
 	}
 	
 	@Test
@@ -61,7 +59,6 @@ public class BirthdayCakeOrderTest {
 		BirthdayCake cake = store.orderCake("", "Ravi");
 		
 		assertNull(cake);
-		
 	}
 
 }
